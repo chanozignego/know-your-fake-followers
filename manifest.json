@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Know your fake followers",
+  "description": "This extension add fake followers percentage to Twitter profile",
+  "version": "1.0",
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "page_action": {
+    "default_icon": "twitter-icon2-19x19.png",
+    "default_popup": "popup.html",
+    "default_title": "Know your fake followers"
+  },
+
+  "permissions": [
+    "declarativeContent",
+    "tabs", 
+    "http://*/*", 
+    "https://*/*"
+  ]
+}
