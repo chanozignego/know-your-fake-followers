@@ -1,0 +1,53 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Get Fake Followers!</title>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        background: white;
+      }
+
+      div:first-child {
+        margin-top: 0px;
+      }
+
+      div {
+        cursor: pointer;
+        text-align: center;
+        padding: 1px 1px;
+        font-family: sans-serif;
+        font-size: 0.8em;
+        width: 100px;
+        margin-top: 1px;
+        background: #cccccc;
+      }
+      div:hover {
+        background: #aaaaaa;
+      }
+      #blue {
+        border: 1px solid #0084B4;
+        color: #0084B4;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="blue">Get Fake Followers</div>
+  </body>
+</html>
+
